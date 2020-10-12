@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+}
+$font1: "DM Serif Display", serif;
+body {
+  font-family: "Poppins", sans-serif;
+}
+.wrapper-80 {
+  width: 80%;
+  margin: 0 auto;
+  @include responsive-sm() {
+    width: 94%;
+  }
+}
+.header {
+  background-image: url(../../img/background.jpg);
+  background-size: cover;
+  background-position: center;
+  @include responsive-sm() {
+    background: none;
+    background: linear-gradient(180deg, #ffffff 48.96%, #e5e5e5 100%);
+  }
+}

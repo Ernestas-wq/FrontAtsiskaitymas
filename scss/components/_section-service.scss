@@ -1,0 +1,67 @@
+.service {
+  margin-top: 95px;
+  padding-bottom: 191px;
+  @include responsive-sm() {
+    margin-top: 52px;
+    padding-bottom: 124px;
+  }
+  &__heading {
+    color: #626780;
+    font-weight: 500;
+    font-size: 26px;
+    text-align: center;
+    @include responsive-sm() {
+      font-size: 24px;
+    }
+  }
+  &__text {
+    font-size: 18px;
+    color: #626780;
+    line-height: 28px;
+    text-align: center;
+    width: 73%;
+    margin: 34px auto 0;
+    @include responsive-sm() {
+      font-size: 16px;
+    }
+  }
+  &__container {
+    margin-top: 93px;
+    display: flex;
+    justify-content: space-between;
+    @include responsive-sm() {
+      flex-direction: column;
+      margin-top: 50px;
+    }
+  }
+  &__card {
+    width: 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include responsive-sm() {
+      width: 100%;
+      margin-top: 51px;
+    }
+    &__img {
+      width: 65px;
+      height: 65px;
+    }
+    &__heading {
+      margin-top: 21px;
+      color: #626780;
+      font-weight: 500;
+      font-size: 22px;
+    }
+    &__text {
+      margin-top: 12px;
+      font-size: 16px;
+      color: #626780;
+      line-height: 20px;
+      text-align: center;
+      @include responsive-sm() {
+        width: 65%;
+      }
+    }
+  }
+}
